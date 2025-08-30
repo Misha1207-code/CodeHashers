@@ -169,6 +169,219 @@ body.dark-mode .dropdown-menu .dropdown-item:hover {
     font-family: 'Carter One', cursive;
     font-size: 1.5rem;;
   }
+    .combined-gradient {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg,
+   grey, white);
+  background-size: 400% 400%;
+  animation: combined-animate 18s ease-in-out infinite alternate;
+  color: white;
+  overflow: hidden;
+  padding: 2rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+@keyframes combined-animate {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.dropend .dropdown-menu {
+    margin-left: 0.1rem;
+    margin-top: -0.5rem;
+  }
+  body {
+  background-color: #ffffff;
+  color: black;
+  padding: 40px;
+}
+
+    .card-custom {
+      background: linear-gradient(135deg, #0F172A 0%, #2563EB 20%, #8B5CF6 40%, #FDE68A 60%, #FCA5A5 75%, #F472B6 85%, #C084FC 100%);
+    }
+    .material-symbols-outlined {
+      vertical-align: middle;
+    }
+
+/* Default light mode styles */
+body.light-mode {
+  background-color: white;
+  color: black;
+}
+
+body.light-mode .navbar:first-of-type,
+body.light-mode .card,
+body.light-mode footer {
+  background-color: white;
+  color: black;
+}
+
+body.light-mode .navbar:first-of-type .nav-link,
+body.light-mode .navbar-brand span {
+  color: black !important;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #0F172A;
+  color: white;
+}
+
+body.dark-mode {
+  background-color: #000000;
+  color: white;
+}
+
+body.dark-mode .navbar:first-of-type,
+body.dark-mode .card,
+body.dark-mode footer {
+  background-color: #000000 !important;
+  color: white !important;
+}
+
+body.dark-mode .navbar:first-of-type .nav-link,
+body.dark-mode .navbar-brand span {
+  color: white !important;
+}
+
+/* Light mode */
+body.light-mode footer {
+  background-color: white;
+  color: black;
+}
+
+/* Dark mode */
+body.dark-mode footer {
+  background-color: #0F172A;
+  color: white;
+}
+/* Light mode muted text */
+body.light-mode .themed-muted {
+  color: #6c757d; /* Bootstrap's default muted color */
+}
+
+/* Dark mode muted text */
+body.dark-mode .themed-muted {
+  color: #bbbbbb; /* A lighter gray for contrast on black */
+}
+
+/* Light mode dropdown */
+body.light-mode .dropdown-menu {
+  background-color: white;
+  color: black;
+}
+
+body.light-mode .dropdown-menu .dropdown-item {
+  color: black;
+}
+
+body.light-mode .dropdown-menu .dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Dark mode dropdown */
+body.dark-mode .dropdown-menu {
+  background-color: #1e293b;
+  color: white;
+  border: 1px solid #334155;
+}
+
+body.dark-mode .dropdown-menu .dropdown-item {
+  color: white;
+}
+
+body.dark-mode .dropdown-menu .dropdown-item:hover {
+  background-color: #334155;
+}
+.logo-text {
+    font-family: 'Winky Sans', sans-serif;
+    font-size: 2rem;
+  }
+
+  .navbar-lora {
+    font-family: 'Lora', serif;
+    font-weight: 700; /* Makes Lora bold */
+  }
+
+  .navbar-lora .nav-link,
+  .navbar-lora .dropdown-item,
+  .navbar-lora .btn {
+    font-weight: 700; /* Ensure links, dropdowns, and buttons are bold */
+  }
+  .permanent-marker-navbar {
+    font-family: 'Permanent Marker', cursive;
+  }
+
+  .permanent-marker-navbar .nav-link {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
+  }
+  .carter-one-font {
+    font-family: 'Carter One', cursive;
+    font-size: 1.5rem;;
+  }
+
+  /* Hover effects for all buttons */
+  button, .btn {
+    transition: all 0.3s ease;
+  }
+
+  button:hover, .btn:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  }
+
+  /* Primary */
+  .btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+  }
+
+  /* Secondary */
+  .btn-secondary:hover {
+    background-color: #5c636a;
+    border-color: #565e64;
+  }
+
+  /* Success */
+  .btn-success:hover {
+    background-color: #157347;
+    border-color: #146c43;
+  }
+
+  /* Danger */
+  .btn-danger:hover {
+    background-color: #bb2d3b;
+    border-color: #b02a37;
+  }
+
+  /* Warning */
+  .btn-warning:hover {
+    background-color: #ffca2c;
+    border-color: #ffc720;
+    color: black;
+  }
+
+  /* Info */
+  .btn-info:hover {
+    background-color: #31d2f2;
+    border-color: #25cff2;
+  }
+
+  /* Light */
+  .btn-light:hover {
+    background-color: #f9f9f9;
+    border-color: #f0f0f0;
+  }
+
+  /* Dark */
+  .btn-dark:hover {
+    background-color: #1a1a1a;
+    border-color: #161616;
+  }
 </style>
 <body>
 <!-- NAVBAR 1 -->
